@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,31 +13,40 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChekPulseTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="MB2-XQ-epa">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.13989847714139014" green="0.056816917759405797" blue="0.094938577425289578" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="KJN-Xo-Q9K">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Frame 5452" translatesAutoresizingMaskIntoConstraints="NO" id="ZCx-Lb-oBb">
-                                <rect key="frame" x="136" y="366" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Frame 5452" translatesAutoresizingMaskIntoConstraints="NO" id="5ji-Kb-sjF">
+                                <rect key="frame" x="154" y="409.66666666666669" width="120" height="120.00000000000006"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="KJN-Xo-Q9K" secondAttribute="bottom" id="DCf-eX-RzW"/>
+                            <constraint firstItem="KJN-Xo-Q9K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GVs-Pq-knk"/>
+                            <constraint firstItem="KJN-Xo-Q9K" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OgN-t2-qU7"/>
+                            <constraint firstItem="5ji-Kb-sjF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xfi-Kw-szg"/>
+                            <constraint firstItem="5ji-Kb-sjF" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ZSE-JJ-Ez5"/>
+                            <constraint firstAttribute="trailing" secondItem="KJN-Xo-Q9K" secondAttribute="trailing" id="whs-gL-t6b"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116.79389312977099" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="115.81395348837209" y="-3.218884120171674"/>
         </scene>
     </scenes>
     <resources>
         <image name="Background" width="375" height="812"/>
         <image name="Frame 5452" width="120" height="120"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

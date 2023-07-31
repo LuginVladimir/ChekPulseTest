@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,31 +12,27 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <view key="view" contentMode="scaleToFill" id="Y5n-ht-ByH">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Kum-2C-QLN">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="DbQ-3v-C88">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WDm-Pg-RVf">
-                                <rect key="frame" x="77" y="342" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zeo-zE-ESO">
-                                <rect key="frame" x="136" y="342" width="120" height="120"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Frame 5452" translatesAutoresizingMaskIntoConstraints="NO" id="7gk-Dr-29k">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Frame 5452" translatesAutoresizingMaskIntoConstraints="NO" id="kfi-U2-28X">
+                                <rect key="frame" x="135" y="368.66666666666669" width="120" height="120"/>
+                            </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="nnt-QE-ac4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Zeo-zE-ESO" firstAttribute="centerY" secondItem="Kum-2C-QLN" secondAttribute="centerY" id="6M4-7T-i0R"/>
-                            <constraint firstItem="Zeo-zE-ESO" firstAttribute="centerX" secondItem="Kum-2C-QLN" secondAttribute="centerX" id="Zfo-8m-phC"/>
+                            <constraint firstItem="DbQ-3v-C88" firstAttribute="top" secondItem="Y5n-ht-ByH" secondAttribute="top" id="AfF-h3-h6f"/>
+                            <constraint firstItem="DbQ-3v-C88" firstAttribute="leading" secondItem="nnt-QE-ac4" secondAttribute="leading" id="DrL-Yf-8Yu"/>
+                            <constraint firstItem="nnt-QE-ac4" firstAttribute="trailing" secondItem="DbQ-3v-C88" secondAttribute="trailing" id="FNQ-oB-Bbv"/>
+                            <constraint firstItem="kfi-U2-28X" firstAttribute="centerY" secondItem="nnt-QE-ac4" secondAttribute="centerY" id="TFs-Re-fM3"/>
+                            <constraint firstItem="kfi-U2-28X" firstAttribute="centerX" secondItem="nnt-QE-ac4" secondAttribute="centerX" id="eJG-Jt-MuL"/>
+                            <constraint firstAttribute="bottom" secondItem="DbQ-3v-C88" secondAttribute="bottom" id="fnn-Cy-mRP"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -48,6 +44,9 @@
     <resources>
         <image name="Background" width="375" height="812"/>
         <image name="Frame 5452" width="120" height="120"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
