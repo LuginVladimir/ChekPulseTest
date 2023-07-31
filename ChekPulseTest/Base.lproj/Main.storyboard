@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" red="0.13989847714139014" green="0.056816917759405797" blue="0.094938577425289578" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Frame 5452" translatesAutoresizingMaskIntoConstraints="NO" id="ZCx-Lb-oBb">
-                                <rect key="frame" x="224" y="148" width="120" height="120"/>
+                                <rect key="frame" x="136" y="366" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
