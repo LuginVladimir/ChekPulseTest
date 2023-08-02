@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,13 +11,13 @@
         <!--Onboarding View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="ChekPulseTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="ChekPulseTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H8Y-w0-xFP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eam-9A-a6A">
-                                <rect key="frame" x="0.0" y="44" width="414" height="674"/>
+                                <rect key="frame" x="0.0" y="47" width="390" height="603"/>
                                 <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="fAg-Em-qa1">
                                     <size key="itemSize" width="429" height="567"/>
@@ -27,7 +27,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardViewCell" id="nmN-BR-fV7" customClass="OnboardViewCell" customModule="ChekPulseTest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="53.666666666666664" width="429" height="567"/>
+                                        <rect key="frame" x="0.0" y="18" width="429" height="567"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="429" height="567"/>
@@ -63,15 +63,14 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="niB-st-LHI"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECX-qv-c2d">
-                                <rect key="frame" x="51.666666666666657" y="780" width="311" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECX-qv-c2d">
+                                <rect key="frame" x="39.666666666666664" y="728" width="311" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="9Qk-rw-Wjd"/>
+                                    <constraint firstAttribute="height" constant="70" id="9Qk-rw-Wjd"/>
                                     <constraint firstAttribute="width" constant="311" id="c04-ac-HJF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="CONTINUE" backgroundImage="onlBUtt">
+                                <state key="normal" title="CONTINUE" image="continueButt" backgroundImage="onlBUtt">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -79,7 +78,7 @@
                                 </connections>
                             </button>
                             <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="E3p-X7-av9">
-                                <rect key="frame" x="149" y="738" width="116" height="26"/>
+                                <rect key="frame" x="137" y="670" width="116" height="26"/>
                                 <color key="pageIndicatorTintColor" systemColor="systemGray2Color"/>
                                 <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pageControl>
@@ -93,7 +92,7 @@
                             <constraint firstItem="E3p-X7-av9" firstAttribute="top" secondItem="eam-9A-a6A" secondAttribute="bottom" id="Z0Z-8K-oUc"/>
                             <constraint firstItem="E3p-X7-av9" firstAttribute="top" secondItem="eam-9A-a6A" secondAttribute="bottom" constant="20" id="kGa-44-Qr0"/>
                             <constraint firstItem="eam-9A-a6A" firstAttribute="leading" secondItem="zBT-P7-8gW" secondAttribute="leading" id="lgv-bT-Bkh"/>
-                            <constraint firstItem="ECX-qv-c2d" firstAttribute="top" secondItem="E3p-X7-av9" secondAttribute="bottom" constant="16" id="n5a-Zm-UiX"/>
+                            <constraint firstItem="ECX-qv-c2d" firstAttribute="top" secondItem="E3p-X7-av9" secondAttribute="bottom" constant="4" id="n5a-Zm-UiX"/>
                             <constraint firstItem="E3p-X7-av9" firstAttribute="centerX" secondItem="zBT-P7-8gW" secondAttribute="centerX" id="qr0-nQ-N8f"/>
                             <constraint firstItem="eam-9A-a6A" firstAttribute="trailing" secondItem="zBT-P7-8gW" secondAttribute="trailing" id="rNS-p9-UOF"/>
                         </constraints>
@@ -109,45 +108,76 @@
             <point key="canvasLocation" x="113.02325581395348" y="-4.5064377682403434"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="kb5-vw-XQ1">
+        <scene sceneID="4VP-56-Cf3">
             <objects>
-                <viewController id="zrn-ue-NDJ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="s51-bM-TXG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController storyboardIdentifier="LTO" id="mPv-gB-82k" customClass="LTOViewController" customModule="ChekPulseTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VNo-K8-SyC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="9hA-2g-85L"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAv-pT-dfD">
+                                <rect key="frame" x="30.333333333333329" y="28.333333333333329" width="48" height="38"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="FrameX">
+                                    <backgroundConfiguration key="background"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="toMeasurmentClicked:" destination="mPv-gB-82k" eventType="touchUpInside" id="DbE-5b-7Az"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b97-VK-ocw">
+                                <rect key="frame" x="27.666666666666657" y="685.33333333333337" width="335" height="86"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="continueButt"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="maa-1T-v8b"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="b97-VK-ocw" firstAttribute="centerX" secondItem="maa-1T-v8b" secondAttribute="centerX" id="krj-ea-vFN"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="b97-VK-ocw" secondAttribute="bottom" multiplier="1.05" id="lVR-Qf-aKw"/>
+                            <constraint firstItem="AAv-pT-dfD" firstAttribute="top" secondItem="VNo-K8-SyC" secondAttribute="topMargin" multiplier="0.6" id="mlh-s9-En8"/>
+                            <constraint firstItem="AAv-pT-dfD" firstAttribute="leading" secondItem="VNo-K8-SyC" secondAttribute="leadingMargin" multiplier="0.03" constant="30" id="rkj-Li-xvu"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ONI-Xm-D4K"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="B9x-by-LHf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vnd-fT-YAR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1931.8840579710147" y="6.6964285714285712"/>
+            <point key="canvasLocation" x="838" y="-5"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="C7U-kq-HhV">
+        <!--Measure Page View Controller-->
+        <scene sceneID="3ZJ-Z8-Ekj">
             <objects>
-                <navigationController storyboardIdentifier="homeNC" automaticallyAdjustsScrollViewInsets="NO" id="1PL-Ud-PzL" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fhI-Dv-xLF">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="zrn-ue-NDJ" kind="relationship" relationship="rootViewController" id="ZoZ-C8-9kU"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="j96-0I-APH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="measurePage" id="gQO-Gj-Bhd" customClass="MeasurePageViewController" customModule="ChekPulseTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RxQ-EJ-eVR">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tempMeasure" translatesAutoresizingMaskIntoConstraints="NO" id="SEu-6v-aG8">
+                                <rect key="frame" x="16" y="147" width="358" height="663"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zXZ-SN-5aU"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SEu-6v-aG8" firstAttribute="top" secondItem="zXZ-SN-5aU" secondAttribute="top" constant="100" id="BAv-gz-QMH"/>
+                            <constraint firstItem="SEu-6v-aG8" firstAttribute="leading" secondItem="RxQ-EJ-eVR" secondAttribute="leadingMargin" id="BFo-fm-qK4"/>
+                            <constraint firstItem="SEu-6v-aG8" firstAttribute="centerX" secondItem="zXZ-SN-5aU" secondAttribute="centerX" id="H8P-Me-Vpk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SEu-6v-aG8" secondAttribute="trailing" id="NL5-T6-8Ue"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="SEu-6v-aG8" secondAttribute="bottom" id="vKV-aZ-VU6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JOn-LE-5uj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1021.7391304347827" y="6.6964285714285712"/>
+            <point key="canvasLocation" x="1588" y="-6"/>
         </scene>
     </scenes>
     <resources>
+        <image name="FrameX" width="24" height="24"/>
+        <image name="continueButt" width="311" height="72"/>
         <image name="onlBUtt" width="311" height="72"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="tempMeasure" width="375" height="656"/>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -8,8 +8,7 @@
 import UIKit
 
 class OnboardingViewController: UIViewController {
-
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var button: UIButton!
@@ -17,6 +16,8 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     
     var slides: [OnboardingSlide] = []
+    
+    
     
     var curretPage = 0 {
         didSet {
@@ -41,9 +42,9 @@ class OnboardingViewController: UIViewController {
 
     @IBAction func continueClicked(_ sender: UIButton) {
         if(curretPage == slides.count - 1){
-            let controller = storyboard?.instantiateViewController(identifier: "homeNC") as! UINavigationController
+            let controller = storyboard?.instantiateViewController(identifier: "LTO") as! LTOViewController
             controller.modalPresentationStyle = .fullScreen
-            controller.modalTransitionStyle = .flipHorizontal 
+            controller.modalTransitionStyle = .coverVertical
             present(controller, animated: true)
         } else{
             curretPage += 1

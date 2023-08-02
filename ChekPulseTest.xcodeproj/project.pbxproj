@@ -17,6 +17,8 @@
 		E73C98F02A72EF6500426F0F /* ChekPulseTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73C98EF2A72EF6500426F0F /* ChekPulseTestUITestsLaunchTests.swift */; };
 		E77D56C52A78474800770B4B /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77D56C42A78474800770B4B /* OnboardingSlide.swift */; };
 		E77D56C92A784AB000770B4B /* OnboardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77D56C82A784AB000770B4B /* OnboardViewCell.swift */; };
+		E78FF61B2A7ACF2000FB0410 /* LTOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78FF61A2A7ACF2000FB0410 /* LTOViewController.swift */; };
+		E78FF61D2A7AD00F00FB0410 /* MeasurePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78FF61C2A7AD00F00FB0410 /* MeasurePageViewController.swift */; };
 		E7DFFA742A783B7C00A9399F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DFFA732A783B7C00A9399F /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		E73C98EF2A72EF6500426F0F /* ChekPulseTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChekPulseTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E77D56C42A78474800770B4B /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		E77D56C82A784AB000770B4B /* OnboardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewCell.swift; sourceTree = "<group>"; };
+		E78FF61A2A7ACF2000FB0410 /* LTOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTOViewController.swift; sourceTree = "<group>"; };
+		E78FF61C2A7AD00F00FB0410 /* MeasurePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurePageViewController.swift; sourceTree = "<group>"; };
 		E7DFFA732A783B7C00A9399F /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				E7DFFA722A783B0D00A9399F /* Onboarding */,
+				E78FF61A2A7ACF2000FB0410 /* LTOViewController.swift */,
+				E78FF61C2A7AD00F00FB0410 /* MeasurePageViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,10 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E78FF61D2A7AD00F00FB0410 /* MeasurePageViewController.swift in Sources */,
 				E77D56C52A78474800770B4B /* OnboardingSlide.swift in Sources */,
 				E73C98CD2A72EF6300426F0F /* AppDelegate.swift in Sources */,
 				E77D56C92A784AB000770B4B /* OnboardViewCell.swift in Sources */,
 				E73C98CF2A72EF6300426F0F /* SceneDelegate.swift in Sources */,
+				E78FF61B2A7ACF2000FB0410 /* LTOViewController.swift in Sources */,
 				E7DFFA742A783B7C00A9399F /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
