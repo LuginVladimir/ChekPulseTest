@@ -19,7 +19,7 @@ class LTOViewController: UIViewController {
     }
     
     @IBAction func toMeasurmentClicked(_ sender: UIButton) {
-        let toPage = storyboard?.instantiateViewController(identifier: "measurePage") as! MeasurePageViewController
+        let toPage = storyboard?.instantiateViewController(identifier: "HomeNC") as! UINavigationController
         toPage.modalPresentationStyle = .fullScreen
         toPage.modalTransitionStyle = .coverVertical
         present(toPage, animated: true)
