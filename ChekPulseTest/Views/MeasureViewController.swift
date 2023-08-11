@@ -34,7 +34,7 @@ class MeasureViewController: UIViewController {
         scoreLabel.textColor = .white
         
         HRVLabel.text = "75"
-        HRVLabel.textColor = .white
+        HRVLabel.textColor = .green
     }
     
     @IBAction func measureCliced(_ sender: Any) {
