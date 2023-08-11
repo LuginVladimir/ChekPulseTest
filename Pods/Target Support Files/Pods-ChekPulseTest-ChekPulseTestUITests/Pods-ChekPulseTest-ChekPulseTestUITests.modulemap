@@ -1,0 +1,6 @@
+framework module Pods_ChekPulseTest_ChekPulseTestUITests {
+  umbrella header "Pods-ChekPulseTest-ChekPulseTestUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
