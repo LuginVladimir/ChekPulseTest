@@ -1,16 +1,26 @@
 PODS:
+  - Charts (4.1.0):
+    - Charts/Core (= 4.1.0)
+  - Charts/Core (4.1.0):
+    - SwiftAlgorithms (~> 1.0)
   - Kingfisher (7.9.0)
+  - SwiftAlgorithms (1.0.0)
 
 DEPENDENCIES:
+  - Charts
   - Kingfisher
 
 SPEC REPOS:
   trunk:
+    - Charts
     - Kingfisher
+    - SwiftAlgorithms
 
 SPEC CHECKSUMS:
+  Charts: ce0768268078eee0336f122c3c4ca248e4e204c5
   Kingfisher: 59f908b6d2f403b0a3e539debb0eec05cb27002c
+  SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
 
-PODFILE CHECKSUM: e48b7bbb82f84ab28672a8d943cc79c7eb66500e
+PODFILE CHECKSUM: 12b0a7ad32a83c5b1c22443554a6c9eb7895c5db
 
 COCOAPODS: 1.12.1
