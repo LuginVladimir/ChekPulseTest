@@ -21,6 +21,8 @@
 		E73C98F02A72EF6500426F0F /* ChekPulseTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73C98EF2A72EF6500426F0F /* ChekPulseTestUITestsLaunchTests.swift */; };
 		E749C0742A877893002DE05B /* NewYork.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E749C0732A877893002DE05B /* NewYork.ttf */; };
 		E749C07D2A879493002DE05B /* ChartControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E749C07C2A879493002DE05B /* ChartControllerViewController.swift */; };
+		E74D07582A8ACBB00030A120 /* BarChartFormatter1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74D07572A8ACBB00030A120 /* BarChartFormatter1.swift */; };
+		E74D075A2A8ACD430030A120 /* ValForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74D07592A8ACD430030A120 /* ValForm.swift */; };
 		E77D56C52A78474800770B4B /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77D56C42A78474800770B4B /* OnboardingSlide.swift */; };
 		E77D56C92A784AB000770B4B /* OnboardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77D56C82A784AB000770B4B /* OnboardViewCell.swift */; };
 		E78FF61B2A7ACF2000FB0410 /* LTOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78FF61A2A7ACF2000FB0410 /* LTOViewController.swift */; };
@@ -80,6 +82,8 @@
 		E749C0782A8786FE002DE05B /* FontsFree-Net-SF-Pro-Rounded-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-SF-Pro-Rounded-Regular.ttf"; sourceTree = "<group>"; };
 		E749C0792A878841002DE05B /* FontsFree-Net-SF-Pro-Rounded-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-SF-Pro-Rounded-Semibold.ttf"; sourceTree = "<group>"; };
 		E749C07C2A879493002DE05B /* ChartControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartControllerViewController.swift; sourceTree = "<group>"; };
+		E74D07572A8ACBB00030A120 /* BarChartFormatter1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartFormatter1.swift; sourceTree = "<group>"; };
+		E74D07592A8ACD430030A120 /* ValForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValForm.swift; sourceTree = "<group>"; };
 		E77D56C42A78474800770B4B /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		E77D56C82A784AB000770B4B /* OnboardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewCell.swift; sourceTree = "<group>"; };
 		E78FF61A2A7ACF2000FB0410 /* LTOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTOViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				E70A7E872A83F7520015950C /* String+Extension.swift */,
+				E74D07572A8ACBB00030A120 /* BarChartFormatter1.swift */,
+				E74D07592A8ACD430030A120 /* ValForm.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -547,6 +553,7 @@
 				E77D56C52A78474800770B4B /* OnboardingSlide.swift in Sources */,
 				E73C98CD2A72EF6300426F0F /* AppDelegate.swift in Sources */,
 				E77D56C92A784AB000770B4B /* OnboardViewCell.swift in Sources */,
+				E74D07582A8ACBB00030A120 /* BarChartFormatter1.swift in Sources */,
 				E73C98CF2A72EF6300426F0F /* SceneDelegate.swift in Sources */,
 				E7F2EDF42A864AF700A04FEB /* AnimatedViewController.swift in Sources */,
 				E7F2EDF82A86762800A04FEB /* MeasureViewController.swift in Sources */,
@@ -557,6 +564,7 @@
 				E70A7E882A83F7520015950C /* String+Extension.swift in Sources */,
 				E70A7E8B2A83FEAF0015950C /* CardView.swift in Sources */,
 				E7DFFA742A783B7C00A9399F /* OnboardingViewController.swift in Sources */,
+				E74D075A2A8ACD430030A120 /* ValForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
