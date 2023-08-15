@@ -57,7 +57,7 @@ class MeasureViewController: UIViewController, ChartViewDelegate {
             scoreName.textColor = .red
             scoreName.text = "Bad"
         }
-        chartCount += 2
+        chartCount += 1
         let enrty = BarChartDataEntry(x:Double(chartCount), y:Double(scoreRandom))
 
 //
