@@ -60,11 +60,7 @@ class MeasureViewController: UIViewController, ChartViewDelegate {
         chartCount += 1
         let enrty = BarChartDataEntry(x:Double(chartCount), y:Double(scoreRandom))
 
-//
         entries.append(enrty)
-//
-//        let enrty2 = BarChartDataEntry(x:Double(chartCount - 1), y:Double(scoreRandom + 2))
-//        entries2.append(enrty2)
     }
     
 
@@ -97,40 +93,21 @@ class MeasureViewController: UIViewController, ChartViewDelegate {
         )
         
         chartView.addSubview(barChart)
-    
-        
-//        for i in 0...6 {
-//
-//            let enrty = BarChartDataEntry(x:Double(i), y:Double(i))
-//
-//            entries.append(enrty)
-//        }
-        
-        
+
         
         let dataSet = BarChartDataSet(entries: entries, label: "Score chart")
 
         
-        dataSet.colors = ChartColorTemplates.joyful()
-        dataSet.setColor(NSUIColor.red)
-        
-        
-//        let dataSet2 = BarChartDataSet(entries: entries2, label: "Score chart2")
-//        dataSet2.setColor(NSUIColor.green)
-        
- //       let data = BarChartData(dataSets: [dataSet,dataSet2])
-            
+        dataSet.setColor(NSUIColor.init(.red))
+        dataSet.valueColors = [.white]
+    
+    
         let data = BarChartData(dataSet: dataSet)
         data.barWidth = 0.1
         
-        let names = ["fr", "f", "erfre","fwerfer","f", "erfre","fwerfer"]
-        barChart.xAxis.valueFormatter = ValForm(values: names)
 
-        
-        
-        // disable grid
+                
         barChart.xAxis.drawGridLinesEnabled = false
-//        barChart.xAxis.drawAxisLineEnabled = false
         barChart.leftAxis.drawAxisLineEnabled = false
         barChart.leftAxis.axisMaximum = 100
         barChart.leftAxis.axisMinimum = 0
@@ -160,4 +137,13 @@ class MeasureViewController: UIViewController, ChartViewDelegate {
         
         barChart.data = data
     }
+    
+    
+    @IBAction func viewAllClicked(_ sender: Any) {
+                let controller = self.storyboard?.instantiateViewController(identifier: "ChartHistory") as! ChartHistoryViewController
+                                controller.modalPresentationStyle = .fullScreen
+        controller.modalTransitionStyle = .coverVertical
+                self.present(controller, animated: true)
+        
+            }
 }

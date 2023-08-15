@@ -11,7 +11,11 @@ import Charts
 class ValForm : IndexAxisValueFormatter{
         
     override func stringForValue(_ value: Double, axis: AxisBase?) -> String {
-        return "dddddd"
+        if(value < 1 ||  value < 2  ){
+            return "dddddd"
+        } else {
+            return ""
+        }
     }
     
 }

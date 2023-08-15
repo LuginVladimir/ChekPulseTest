@@ -10,6 +10,7 @@ import Charts
 
 class ChartControllerViewController: UIViewController, ChartViewDelegate {
             
+
     var barChart = BarChartView()
     var lineChart = LineChartView()
     var pieChart = PieChartView()
@@ -103,5 +104,4 @@ class ChartControllerViewController: UIViewController, ChartViewDelegate {
         
         pieChart.data = data
     }
-
 }

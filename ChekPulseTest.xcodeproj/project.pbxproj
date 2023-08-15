@@ -30,6 +30,7 @@
 		E79AED962A82A5B500527EC3 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79AED942A82A5B500527EC3 /* CategoryCollectionViewCell.swift */; };
 		E79AED972A82A5B500527EC3 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E79AED952A82A5B500527EC3 /* CategoryCollectionViewCell.xib */; };
 		E7DFFA742A783B7C00A9399F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DFFA732A783B7C00A9399F /* OnboardingViewController.swift */; };
+		E7E05CAC2A8BD01700D89B2A /* ChartHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E05CAB2A8BD01700D89B2A /* ChartHistoryViewController.swift */; };
 		E7F2EDF22A8642FE00A04FEB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E7F2EDF12A8642FE00A04FEB /* Lottie */; };
 		E7F2EDF42A864AF700A04FEB /* AnimatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2EDF32A864AF700A04FEB /* AnimatedViewController.swift */; };
 		E7F2EDF62A86703800A04FEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7F2EDF52A86703800A04FEB /* Main.storyboard */; };
@@ -91,6 +92,7 @@
 		E79AED942A82A5B500527EC3 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		E79AED952A82A5B500527EC3 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		E7DFFA732A783B7C00A9399F /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		E7E05CAB2A8BD01700D89B2A /* ChartHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartHistoryViewController.swift; sourceTree = "<group>"; };
 		E7F2EDF32A864AF700A04FEB /* AnimatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedViewController.swift; sourceTree = "<group>"; };
 		E7F2EDF52A86703800A04FEB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		E7F2EDF72A86762800A04FEB /* MeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureViewController.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 				E7F2EDF32A864AF700A04FEB /* AnimatedViewController.swift */,
 				E7F2EDF72A86762800A04FEB /* MeasureViewController.swift */,
 				E749C07C2A879493002DE05B /* ChartControllerViewController.swift */,
+				E7E05CAB2A8BD01700D89B2A /* ChartHistoryViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -560,6 +563,7 @@
 				E78FF61B2A7ACF2000FB0410 /* LTOViewController.swift in Sources */,
 				E79AED8B2A829B5400527EC3 /* HomeViewController.swift in Sources */,
 				E749C07D2A879493002DE05B /* ChartControllerViewController.swift in Sources */,
+				E7E05CAC2A8BD01700D89B2A /* ChartHistoryViewController.swift in Sources */,
 				E70A7E852A83EA8B0015950C /* DishCategory.swift in Sources */,
 				E70A7E882A83F7520015950C /* String+Extension.swift in Sources */,
 				E70A7E8B2A83FEAF0015950C /* CardView.swift in Sources */,
