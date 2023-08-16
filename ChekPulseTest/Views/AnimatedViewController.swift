@@ -25,22 +25,42 @@ class AnimatedViewController: UIViewController {
         
         // 3. Adjust animation speed
         
-        anivationView.animationSpeed = 2
+        anivationView.animationSpeed = 6
         
         // 4. Play animation
         anivationView.play { (finished) in
             if finished {
-                let controller = self.storyboard?.instantiateViewController(identifier: "main") as! OnboardingViewController
-                                controller.modalPresentationStyle = .fullScreen
-                                controller.modalTransitionStyle = .coverVertical
-                self.present(controller, animated: true)
-            
-
-//                let controller = storyboard?.instantiateViewController(identifier: "main") as! OnboardingViewController
-//                controller.modalPresentationStyle = .fullScreen
-//                controller.modalTransitionStyle = .coverVertical
-//                present(controller, animated: true)
+//                UserDefaults.standard.hasOnboarded = false
+                UserDefaults.standard.hasSubscription = false
+                if(UserDefaults.standard.hasOnboarded){
+                    if(UserDefaults.standard.hasSubscription) {
+                        self.loadMeasurePage()
+                    } else{
+                        self.loadLTO()
+                    }
+    
+                } else {
+                    let controller1 = self.storyboard?.instantiateViewController(identifier: "onboard") as! OnboardingViewController
+                                    controller1.modalPresentationStyle = .fullScreen
+                                    controller1.modalTransitionStyle = .coverVertical
+                    self.present(controller1, animated: true)
+                }
             }
         }
+        
+    }
+    
+    private func loadLTO(){
+        let controller = self.storyboard?.instantiateViewController(identifier: "LTO") as! LTOViewController
+                        controller.modalPresentationStyle = .fullScreen
+                        controller.modalTransitionStyle = .coverVertical
+        self.present(controller, animated: true)
+    }
+    
+    private func loadMeasurePage(){
+        let controller = self.storyboard?.instantiateViewController(identifier: "measure") as! MeasureViewController
+                        controller.modalPresentationStyle = .fullScreen
+                        controller.modalTransitionStyle = .coverVertical
+        self.present(controller, animated: true)
     }
 }

@@ -45,6 +45,7 @@ class OnboardingViewController: UIViewController {
             let controller = storyboard?.instantiateViewController(identifier: "LTO") as! LTOViewController
             controller.modalPresentationStyle = .fullScreen
             controller.modalTransitionStyle = .coverVertical
+            UserDefaults.standard.hasOnboarded = true
             present(controller, animated: true)
         } else{
             curretPage += 1
@@ -81,4 +82,15 @@ UICollectionViewDelegateFlowLayout
 
     }
     
+}
+
+extension OnboardingViewController{
+    static var identifier: String{
+        return String(describing: self)
+    }
+    
+    static func instantiate() -> Self {
+        let storyBoard = UIStoryboard(name: "main", bundle: nil)
+        return storyBoard.instantiateViewController(identifier: identifier) as! Self
+    }
 }
