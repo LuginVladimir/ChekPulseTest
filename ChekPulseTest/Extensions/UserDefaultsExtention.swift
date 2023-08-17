@@ -16,6 +16,8 @@ extension UserDefaults{
             case hasSubscription
             case scoreChartData
             case scoreChartCount
+            case pulseChartData
+            case HRVChartData
         }
     
     var scoreChartData: [Int] {
@@ -24,6 +26,24 @@ extension UserDefaults{
         }
         set{
            setValue(newValue, forKey: UserDafaultsDeys.scoreChartData.rawValue)
+        }
+    }
+    
+    var pulseChartData: [Int] {
+        get{
+           array(forKey: UserDafaultsDeys.pulseChartData.rawValue)  as? [Int] ?? [Int]()
+        }
+        set{
+           setValue(newValue, forKey: UserDafaultsDeys.pulseChartData.rawValue)
+        }
+    }
+    
+    var HRVChartData: [Int] {
+        get{
+           array(forKey: UserDafaultsDeys.HRVChartData.rawValue)  as? [Int] ?? [Int]()
+        }
+        set{
+           setValue(newValue, forKey: UserDafaultsDeys.HRVChartData.rawValue)
         }
     }
     

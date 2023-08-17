@@ -14,6 +14,7 @@ class AnimatedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        flush()
         
         // 1. Set animation content mode
         
@@ -25,13 +26,11 @@ class AnimatedViewController: UIViewController {
         
         // 3. Adjust animation speed
         
-        anivationView.animationSpeed = 6
+        anivationView.animationSpeed = 4
         
         // 4. Play animation
         anivationView.play { (finished) in
             if finished {
-//                UserDefaults.standard.hasOnboarded = false
-//                UserDefaults.standard.hasSubscription = false
                 if(UserDefaults.standard.hasOnboarded){
                     if(UserDefaults.standard.hasSubscription) {
                         self.loadMeasurePage()
@@ -48,6 +47,15 @@ class AnimatedViewController: UIViewController {
             }
         }
         
+    }
+    
+    private func flush(){
+        UserDefaults.standard.hasOnboarded = false
+        UserDefaults.standard.hasSubscription = false
+        UserDefaults.standard.removeObject(forKey:UserDefaults.UserDafaultsDeys.scoreChartData.rawValue)
+        UserDefaults.standard.removeObject(forKey:UserDefaults.UserDafaultsDeys.scoreChartCount.rawValue)
+        UserDefaults.standard.removeObject(forKey:UserDefaults.UserDafaultsDeys.pulseChartData.rawValue)
+        UserDefaults.standard.removeObject(forKey:UserDefaults.UserDafaultsDeys.HRVChartData.rawValue)
     }
     
     private func loadLTO(){

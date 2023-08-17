@@ -28,6 +28,7 @@ class MeasureViewController: UIViewController, ChartViewDelegate {
         super.viewDidLoad()
         barChart.delegate = self
         initMeasureView()
+        initDefault()
     }
     
     override func viewDidLayoutSubviews() {
@@ -36,8 +37,10 @@ class MeasureViewController: UIViewController, ChartViewDelegate {
     }
     
     @IBAction func measureCliced(_ sender: Any) {
-        pulseLabel.text = Int.random(in: 1...100).description
-        HRVLabel.text = Int.random(in: 1...100).description
+        let pulse = Int.random(in: 1...100)
+        pulseLabel.text = pulse.description
+        let hrv = Int.random(in: 1...100)
+        HRVLabel.text = hrv.description
         
         let scoreRandom = Int.random(in: 1...100)
         scoreLabel.text = scoreRandom.description + "%"
@@ -60,10 +63,30 @@ class MeasureViewController: UIViewController, ChartViewDelegate {
         UserDefaults.standard.removeObject(forKey: UserDefaults.UserDafaultsDeys.scoreChartCount.rawValue)
         UserDefaults.standard.scoreChartCount = currentCount
         
+        updateScoreData(data: scoreRandom)
+        updatePulseData(data: pulse)
+        updateHRVData(data: hrv)
+    }
+    
+    private func updateScoreData(data: Int){
         var scoreChartData = UserDefaults.standard.scoreChartData
-        scoreChartData.append(scoreRandom)
+        scoreChartData.append(data)
         UserDefaults.standard.removeObject(forKey: UserDefaults.UserDafaultsDeys.scoreChartData.rawValue)
         UserDefaults.standard.scoreChartData = scoreChartData
+    }
+    
+    private func updatePulseData(data: Int){
+        var scoreChartData = UserDefaults.standard.pulseChartData
+        scoreChartData.append(data)
+        UserDefaults.standard.removeObject(forKey: UserDefaults.UserDafaultsDeys.pulseChartData.rawValue)
+        UserDefaults.standard.pulseChartData = scoreChartData
+    }
+    
+    private func updateHRVData(data: Int){
+        var scoreChartData = UserDefaults.standard.HRVChartData
+        scoreChartData.append(data)
+        UserDefaults.standard.removeObject(forKey: UserDefaults.UserDafaultsDeys.HRVChartData.rawValue)
+        UserDefaults.standard.HRVChartData = scoreChartData
     }
     
 
@@ -122,6 +145,26 @@ class MeasureViewController: UIViewController, ChartViewDelegate {
         barChart.legend.enabled = false
         
         barChart.data = data
+    }
+    
+    private func initDefault(){
+        let pulseChart = UserDefaults.standard.pulseChartData
+        if(!pulseChart.isEmpty){
+            let pulseLastValue = pulseChart.last!
+            pulseLabel.text = pulseLastValue.description
+        }
+        
+        let HRVChart = UserDefaults.standard.HRVChartData
+        if(!HRVChart.isEmpty){
+            let HRVLastValue = HRVChart.last!
+            HRVLabel.text = HRVLastValue.description
+        }
+        
+        let scoreChart = UserDefaults.standard.scoreChartData
+        if(!scoreChart.isEmpty){
+            let scoreLastValue = scoreChart.last!
+            scoreLabel.text = scoreLastValue.description + "%"
+        }
     }
     
     
