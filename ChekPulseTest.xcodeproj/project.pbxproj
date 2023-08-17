@@ -26,6 +26,7 @@
 		E749C07D2A879493002DE05B /* ChartControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E749C07C2A879493002DE05B /* ChartControllerViewController.swift */; };
 		E74D07582A8ACBB00030A120 /* BarChartFormatter1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74D07572A8ACBB00030A120 /* BarChartFormatter1.swift */; };
 		E74D075A2A8ACD430030A120 /* ValForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74D07592A8ACD430030A120 /* ValForm.swift */; };
+		E765FD242A8EC55E0033ACE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E765FD222A8EC55E0033ACE5 /* Main.storyboard */; };
 		E77D56C52A78474800770B4B /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77D56C42A78474800770B4B /* OnboardingSlide.swift */; };
 		E77D56C92A784AB000770B4B /* OnboardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77D56C82A784AB000770B4B /* OnboardViewCell.swift */; };
 		E78FF61B2A7ACF2000FB0410 /* LTOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78FF61A2A7ACF2000FB0410 /* LTOViewController.swift */; };
@@ -90,6 +91,7 @@
 		E749C07C2A879493002DE05B /* ChartControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartControllerViewController.swift; sourceTree = "<group>"; };
 		E74D07572A8ACBB00030A120 /* BarChartFormatter1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartFormatter1.swift; sourceTree = "<group>"; };
 		E74D07592A8ACD430030A120 /* ValForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValForm.swift; sourceTree = "<group>"; };
+		E765FD232A8EC55E0033ACE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E77D56C42A78474800770B4B /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		E77D56C82A784AB000770B4B /* OnboardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewCell.swift; sourceTree = "<group>"; };
 		E78FF61A2A7ACF2000FB0410 /* LTOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTOViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				E73C98CC2A72EF6300426F0F /* AppDelegate.swift */,
 				E73C98CE2A72EF6300426F0F /* SceneDelegate.swift */,
 				E749C0732A877893002DE05B /* NewYork.ttf */,
+				E765FD222A8EC55E0033ACE5 /* Main.storyboard */,
 				E73C98D52A72EF6400426F0F /* Assets.xcassets */,
 				E73C98D72A72EF6400426F0F /* LaunchScreen.storyboard */,
 				E73C98DA2A72EF6400426F0F /* Info.plist */,
@@ -427,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E79AED972A82A5B500527EC3 /* CategoryCollectionViewCell.xib in Resources */,
+				E765FD242A8EC55E0033ACE5 /* Main.storyboard in Resources */,
 				E73C98D92A72EF6400426F0F /* LaunchScreen.storyboard in Resources */,
 				E73C98D62A72EF6400426F0F /* Assets.xcassets in Resources */,
 				E749C0742A877893002DE05B /* NewYork.ttf in Resources */,
@@ -619,6 +623,14 @@
 				E73C98D82A72EF6400426F0F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E765FD222A8EC55E0033ACE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E765FD232A8EC55E0033ACE5 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
