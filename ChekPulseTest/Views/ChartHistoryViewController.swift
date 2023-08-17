@@ -11,10 +11,13 @@ import Charts
 class ChartHistoryViewController: UIViewController, ChartViewDelegate {
 
     @IBOutlet weak var pulseOuterView: UIView!
-    
     @IBOutlet weak var pulseChartView: UIView!
+    
+    @IBOutlet weak var HRVOuterView: UIView!
+    
+    @IBOutlet weak var scoreOuterView: UIView!
+    
     var lineChart = LineChartView()
-    let pulseChartData = [20, 50, 70, 40]
     
     
     override func viewDidLoad() {
@@ -34,11 +37,14 @@ class ChartHistoryViewController: UIViewController, ChartViewDelegate {
         
         var entries = [ChartDataEntry]()
         
-        var count = 0
-        
-        for x in pulseChartData {
-            entries.append(ChartDataEntry(x:Double(count), y:Double(x)))
-            count += 1
+        let scoreChartData = UserDefaults.standard.scoreChartData//ЭТО СКОР!!  поменять на пульс!!!!
+        if(!scoreChartData.isEmpty){
+            var count = 0
+            for _ in scoreChartData{
+                let enrty = BarChartDataEntry(x:Double(count), y:Double(scoreChartData[count]))
+                entries.append(enrty)
+                count += 1
+            }
         }
         
         let dataSet = LineChartDataSet(entries: entries)
@@ -53,5 +59,14 @@ class ChartHistoryViewController: UIViewController, ChartViewDelegate {
     
     private func initDefaults(){
         pulseOuterView.layer.cornerRadius = 20
+        HRVOuterView.layer.cornerRadius = 20
+        scoreOuterView.layer.cornerRadius = 20
+    }
+    
+    @IBAction func backButton(_ sender: UIButton) {
+        let controller = self.storyboard?.instantiateViewController(identifier: "measure") as! MeasureViewController
+                        controller.modalPresentationStyle = .fullScreen
+                        controller.modalTransitionStyle = .coverVertical
+        self.present(controller, animated: true)
     }
 }

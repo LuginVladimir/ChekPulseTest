@@ -9,12 +9,32 @@ import Foundation
 
 extension UserDefaults{
 
-        private enum UserDafaultsDeys : String{
+         enum UserDafaultsDeys : String{
             case switchSate
             case signedUser
             case hasOnboarded
             case hasSubscription
+            case scoreChartData
+            case scoreChartCount
         }
+    
+    var scoreChartData: [Int] {
+        get{
+           array(forKey: UserDafaultsDeys.scoreChartData.rawValue)  as? [Int] ?? [Int]()
+        }
+        set{
+           setValue(newValue, forKey: UserDafaultsDeys.scoreChartData.rawValue)
+        }
+    }
+    
+    var scoreChartCount: Int {
+        get{
+            integer(forKey: UserDafaultsDeys.scoreChartCount.rawValue)
+        }
+        set{
+           setValue(newValue, forKey: UserDafaultsDeys.scoreChartCount.rawValue)
+        }
+    }
     
     var hasOnboarded: Bool {
         get{

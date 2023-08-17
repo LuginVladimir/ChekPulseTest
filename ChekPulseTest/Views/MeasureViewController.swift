@@ -22,15 +22,12 @@ class MeasureViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var chartView: UIView!
     
     var barChart = BarChartView()
-    
-    var chartCount = 0
+    var entries = [BarChartDataEntry]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         barChart.delegate = self
         initMeasureView()
-
-
     }
     
     override func viewDidLayoutSubviews() {
@@ -57,10 +54,16 @@ class MeasureViewController: UIViewController, ChartViewDelegate {
             scoreName.textColor = .red
             scoreName.text = "Bad"
         }
-        chartCount += 1
-        let enrty = BarChartDataEntry(x:Double(chartCount), y:Double(scoreRandom))
-
-        entries.append(enrty)
+        
+        var currentCount = UserDefaults.standard.scoreChartCount
+        currentCount += 1
+        UserDefaults.standard.removeObject(forKey: UserDefaults.UserDafaultsDeys.scoreChartCount.rawValue)
+        UserDefaults.standard.scoreChartCount = currentCount
+        
+        var scoreChartData = UserDefaults.standard.scoreChartData
+        scoreChartData.append(scoreRandom)
+        UserDefaults.standard.removeObject(forKey: UserDefaults.UserDafaultsDeys.scoreChartData.rawValue)
+        UserDefaults.standard.scoreChartData = scoreChartData
     }
     
 
@@ -81,11 +84,6 @@ class MeasureViewController: UIViewController, ChartViewDelegate {
         chartView.layer.cornerRadius = 20
     }
     
-    var entries = [BarChartDataEntry]()
-    var entries2 = [BarChartDataEntry]()
-    
-    var salesMonths = [String]()
-    
     private func initChart(){
         barChart.frame = CGRect(x:0, y:0,
                                 width: chartView.frame.size.width,
@@ -93,47 +91,35 @@ class MeasureViewController: UIViewController, ChartViewDelegate {
         )
         
         chartView.addSubview(barChart)
-
         
+        let scoreChartData = UserDefaults.standard.scoreChartData
+        if(!scoreChartData.isEmpty){
+            var count = 0
+            for _ in scoreChartData{
+                let enrty = BarChartDataEntry(x:Double(count), y:Double(scoreChartData[count]))
+                entries.append(enrty)
+                count += 1
+            }
+        }
         let dataSet = BarChartDataSet(entries: entries, label: "Score chart")
 
-        
         dataSet.setColor(NSUIColor.init(.red))
         dataSet.valueColors = [.white]
     
-    
         let data = BarChartData(dataSet: dataSet)
         data.barWidth = 0.1
-        
-
-                
+    
         barChart.xAxis.drawGridLinesEnabled = false
         barChart.leftAxis.drawAxisLineEnabled = false
         barChart.leftAxis.axisMaximum = 100
         barChart.leftAxis.axisMinimum = 0
         barChart.rightAxis.drawGridLinesEnabled = false
         barChart.rightAxis.drawAxisLineEnabled = false
-        //barChart.drawGridBackgroundEnabled = false
-        // disable axis annotations
-        //barChart.xAxis.drawLabelsEnabled = false
         barChart.xAxis.labelTextColor = .lightGray
         barChart.xAxis.labelPosition = .bottom
         barChart.leftAxis.labelTextColor = .darkGray
         barChart.rightAxis.drawLabelsEnabled = false
-//        // disable legend
         barChart.legend.enabled = false
-//        // disable zoom
-//        barChart.pinchZoomEnabled = false
-//        barChart.doubleTapToZoomEnabled = false
-//        // remove artifacts around chart area
-//        barChart.xAxis.enabled = false
-//        barChart.leftAxis.enabled = false
-//        barChart.rightAxis.enabled = false
-//        barChart.drawBordersEnabled = false
-//        barChart.minOffset = 0
-//        data.drawAxisLineEnabled = false
-//        data.drawGridLinesEnabled = false
-        
         
         barChart.data = data
     }

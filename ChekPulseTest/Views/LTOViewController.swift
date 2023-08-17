@@ -18,7 +18,7 @@ class LTOViewController: UIViewController {
             backgroundImage.image = UIImage(named: "LTO1")
             self.view.insertSubview(backgroundImage, at: 0)
         
-        let timer2 = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false) { timer in
+        Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false) { timer in
             self.closeButton.isHidden = false
         }
 

@@ -31,7 +31,7 @@ class AnimatedViewController: UIViewController {
         anivationView.play { (finished) in
             if finished {
 //                UserDefaults.standard.hasOnboarded = false
-                UserDefaults.standard.hasSubscription = false
+//                UserDefaults.standard.hasSubscription = false
                 if(UserDefaults.standard.hasOnboarded){
                     if(UserDefaults.standard.hasSubscription) {
                         self.loadMeasurePage()
