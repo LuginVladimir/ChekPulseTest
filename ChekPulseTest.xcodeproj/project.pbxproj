@@ -36,7 +36,6 @@
 		E7E05CAC2A8BD01700D89B2A /* ChartHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E05CAB2A8BD01700D89B2A /* ChartHistoryViewController.swift */; };
 		E7F2EDF22A8642FE00A04FEB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E7F2EDF12A8642FE00A04FEB /* Lottie */; };
 		E7F2EDF42A864AF700A04FEB /* AnimatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2EDF32A864AF700A04FEB /* AnimatedViewController.swift */; };
-		E7F2EDF62A86703800A04FEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7F2EDF52A86703800A04FEB /* Main.storyboard */; };
 		E7F2EDF82A86762800A04FEB /* MeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2EDF72A86762800A04FEB /* MeasureViewController.swift */; };
 		F6B6B906213EC445A9594D48 /* Pods_ChekPulseTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4342D49DAB1D8491BB62AD23 /* Pods_ChekPulseTestTests.framework */; };
 /* End PBXBuildFile section */
@@ -100,7 +99,6 @@
 		E7DFFA732A783B7C00A9399F /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		E7E05CAB2A8BD01700D89B2A /* ChartHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartHistoryViewController.swift; sourceTree = "<group>"; };
 		E7F2EDF32A864AF700A04FEB /* AnimatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedViewController.swift; sourceTree = "<group>"; };
-		E7F2EDF52A86703800A04FEB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		E7F2EDF72A86762800A04FEB /* MeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureViewController.swift; sourceTree = "<group>"; };
 		E992C43088BCCE85850731E1 /* Pods-ChekPulseTest-ChekPulseTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChekPulseTest-ChekPulseTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChekPulseTest-ChekPulseTestUITests/Pods-ChekPulseTest-ChekPulseTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F1AD80A9E9D29DCCB6E7F121 /* Pods-ChekPulseTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChekPulseTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ChekPulseTestTests/Pods-ChekPulseTestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -209,7 +207,6 @@
 				E7DFFA6F2A783AE400A9399F /* Views */,
 				E73C98CC2A72EF6300426F0F /* AppDelegate.swift */,
 				E73C98CE2A72EF6300426F0F /* SceneDelegate.swift */,
-				E7F2EDF52A86703800A04FEB /* Main.storyboard */,
 				E749C0732A877893002DE05B /* NewYork.ttf */,
 				E73C98D52A72EF6400426F0F /* Assets.xcassets */,
 				E73C98D72A72EF6400426F0F /* LaunchScreen.storyboard */,
@@ -433,7 +430,6 @@
 				E73C98D92A72EF6400426F0F /* LaunchScreen.storyboard in Resources */,
 				E73C98D62A72EF6400426F0F /* Assets.xcassets in Resources */,
 				E749C0742A877893002DE05B /* NewYork.ttf in Resources */,
-				E7F2EDF62A86703800A04FEB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
