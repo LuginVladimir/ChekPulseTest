@@ -222,6 +222,21 @@
             </objects>
             <point key="canvasLocation" x="1829" y="-5"/>
         </scene>
+        <!--Chart History View Controller-->
+        <scene sceneID="dxJ-6u-HfK">
+            <objects>
+                <viewController storyboardIdentifier="ChartHistory" id="vds-2y-Qe9" customClass="ChartHistoryViewController" customModule="ChekPulseTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AFs-Kk-QFP">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3IX-lG-vuN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rle-K6-3iI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2742" y="-5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Background" width="375" height="812"/>
