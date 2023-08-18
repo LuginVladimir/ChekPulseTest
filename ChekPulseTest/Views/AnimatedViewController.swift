@@ -39,7 +39,7 @@ class AnimatedViewController: UIViewController {
                     }
     
                 } else {
-                    let controller1 = self.storyboard?.instantiateViewController(identifier: "onboard") as! OnboardingViewController
+                    let controller1 = self.storyboard?.instantiateViewController(identifier: "main") as! OnboardingViewController
                                     controller1.modalPresentationStyle = .fullScreen
                                     controller1.modalTransitionStyle = .coverVertical
                     self.present(controller1, animated: true)

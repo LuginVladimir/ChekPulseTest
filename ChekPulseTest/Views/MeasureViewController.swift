@@ -20,15 +20,21 @@ class MeasureViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var scoreName: UILabel!
     @IBOutlet weak var chartView: UIView!
+    @IBOutlet weak var allMeasurementsView: UIView!
+    @IBOutlet weak var heartScoreView: UIView!
+    @IBOutlet weak var heartScoreLabel: UILabel!
+    @IBOutlet weak var chartOuterView: UIView!
+    @IBOutlet weak var measureButton: UIButton!
     
     var barChart = BarChartView()
     var entries = [BarChartDataEntry]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+          initDefault()
         barChart.delegate = self
         initMeasureView()
-        initDefault()
+
     }
     
     override func viewDidLayoutSubviews() {
@@ -41,6 +47,9 @@ class MeasureViewController: UIViewController, ChartViewDelegate {
         pulseLabel.text = pulse.description
         let hrv = Int.random(in: 1...100)
         HRVLabel.text = hrv.description
+        
+        let heartScore = Int.random(in: 20...120)
+        heartScoreLabel.text = heartScore.description
         
         let scoreRandom = Int.random(in: 1...100)
         scoreLabel.text = scoreRandom.description + "%"
@@ -92,9 +101,10 @@ class MeasureViewController: UIViewController, ChartViewDelegate {
 
     private func initMeasureView(){
         LastMeasurement.layer.cornerRadius = 20
-        
-        lastMeasureDateLabel.text = "10 Aug, 11:20"
-        
+        allMeasurementsView.layer.cornerRadius = 20
+        heartScoreView.layer.cornerRadius = 20
+        chartOuterView.layer.cornerRadius = 20
+
         pulseLabel.text = "66"
         pulseLabel.textColor = .white
         
