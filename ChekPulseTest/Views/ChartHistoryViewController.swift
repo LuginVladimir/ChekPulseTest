@@ -35,17 +35,17 @@ class ChartHistoryViewController: UIViewController, ChartViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        pulseChart.delegate = self
-//        HRVChart.delegate = self
-//        scoreChart.delegate = self
-//        initDefaults()
+        pulseChart.delegate = self
+        HRVChart.delegate = self
+        scoreChart.delegate = self
+        initDefaults()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-//        initPulseChart()
-//        initHRVChart()
-//        initScoreChart()
+        initPulseChart()
+        initHRVChart()
+        initScoreChart()
     }
     
     private func initPulseChart(){

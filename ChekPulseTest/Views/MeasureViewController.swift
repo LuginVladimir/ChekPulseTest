@@ -105,13 +105,13 @@ class MeasureViewController: UIViewController, ChartViewDelegate {
         heartScoreView.layer.cornerRadius = 20
         chartOuterView.layer.cornerRadius = 20
 
-        pulseLabel.text = "66"
+        pulseLabel.text = "00"
         pulseLabel.textColor = .white
         
-        scoreLabel.text = "91%"
+        scoreLabel.text = "0%"
         scoreLabel.textColor = .green
         
-        HRVLabel.text = "75"
+        HRVLabel.text = "00"
         HRVLabel.textColor = .white
         
         chartView.layer.cornerRadius = 20

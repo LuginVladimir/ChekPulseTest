@@ -23,7 +23,6 @@
 		E73C98EE2A72EF6500426F0F /* ChekPulseTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73C98ED2A72EF6500426F0F /* ChekPulseTestUITests.swift */; };
 		E73C98F02A72EF6500426F0F /* ChekPulseTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73C98EF2A72EF6500426F0F /* ChekPulseTestUITestsLaunchTests.swift */; };
 		E749C0742A877893002DE05B /* NewYork.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E749C0732A877893002DE05B /* NewYork.ttf */; };
-		E749C07D2A879493002DE05B /* ChartControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E749C07C2A879493002DE05B /* ChartControllerViewController.swift */; };
 		E74D07582A8ACBB00030A120 /* BarChartFormatter1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74D07572A8ACBB00030A120 /* BarChartFormatter1.swift */; };
 		E74D075A2A8ACD430030A120 /* ValForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74D07592A8ACD430030A120 /* ValForm.swift */; };
 		E765FD242A8EC55E0033ACE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E765FD222A8EC55E0033ACE5 /* Main.storyboard */; };
@@ -88,7 +87,6 @@
 		E749C0772A8779B6002DE05B /* NewYorkMedium-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NewYorkMedium-Bold.ttf"; path = "../../../../../Downloads/new-york-font-family/NewYorkMedium-Bold.ttf"; sourceTree = "<group>"; };
 		E749C0782A8786FE002DE05B /* FontsFree-Net-SF-Pro-Rounded-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-SF-Pro-Rounded-Regular.ttf"; sourceTree = "<group>"; };
 		E749C0792A878841002DE05B /* FontsFree-Net-SF-Pro-Rounded-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-SF-Pro-Rounded-Semibold.ttf"; sourceTree = "<group>"; };
-		E749C07C2A879493002DE05B /* ChartControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartControllerViewController.swift; sourceTree = "<group>"; };
 		E74D07572A8ACBB00030A120 /* BarChartFormatter1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartFormatter1.swift; sourceTree = "<group>"; };
 		E74D07592A8ACD430030A120 /* ValForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValForm.swift; sourceTree = "<group>"; };
 		E765FD232A8EC55E0033ACE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -279,7 +277,6 @@
 				E78FF61A2A7ACF2000FB0410 /* LTOViewController.swift */,
 				E7F2EDF32A864AF700A04FEB /* AnimatedViewController.swift */,
 				E7F2EDF72A86762800A04FEB /* MeasureViewController.swift */,
-				E749C07C2A879493002DE05B /* ChartControllerViewController.swift */,
 				E7E05CAB2A8BD01700D89B2A /* ChartHistoryViewController.swift */,
 				E71586232A8D192B00C0C043 /* UserDefaultsViewController.swift */,
 			);
@@ -573,7 +570,6 @@
 				E7F2EDF82A86762800A04FEB /* MeasureViewController.swift in Sources */,
 				E78FF61B2A7ACF2000FB0410 /* LTOViewController.swift in Sources */,
 				E79AED8B2A829B5400527EC3 /* HomeViewController.swift in Sources */,
-				E749C07D2A879493002DE05B /* ChartControllerViewController.swift in Sources */,
 				E7E05CAC2A8BD01700D89B2A /* ChartHistoryViewController.swift in Sources */,
 				E70A7E852A83EA8B0015950C /* DishCategory.swift in Sources */,
 				E70A7E882A83F7520015950C /* String+Extension.swift in Sources */,
