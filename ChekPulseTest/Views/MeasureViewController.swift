@@ -162,6 +162,7 @@ class MeasureViewController: UIViewController, ChartViewDelegate {
         if(!pulseChart.isEmpty){
             let pulseLastValue = pulseChart.last!
             pulseLabel.text = pulseLastValue.description
+            heartScoreLabel.text = pulseLastValue.description
         }
         
         let HRVChart = UserDefaults.standard.HRVChartData
