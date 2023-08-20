@@ -8,6 +8,7 @@ target 'ChekPulseTest' do
   # Pods for ChekPulseTest
   pod "Kingfisher"
   pod "Charts"
+  pod "Firebase"
 
   target 'ChekPulseTestTests' do
     inherit! :search_paths

@@ -28,6 +28,7 @@
 		E765FD242A8EC55E0033ACE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E765FD222A8EC55E0033ACE5 /* Main.storyboard */; };
 		E77D56C52A78474800770B4B /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77D56C42A78474800770B4B /* OnboardingSlide.swift */; };
 		E77D56C92A784AB000770B4B /* OnboardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77D56C82A784AB000770B4B /* OnboardViewCell.swift */; };
+		E77D710F2A928AA100ADF786 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E77D710E2A928AA100ADF786 /* GoogleService-Info.plist */; };
 		E78FF61B2A7ACF2000FB0410 /* LTOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78FF61A2A7ACF2000FB0410 /* LTOViewController.swift */; };
 		E79AED8B2A829B5400527EC3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79AED8A2A829B5400527EC3 /* HomeViewController.swift */; };
 		E79AED962A82A5B500527EC3 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79AED942A82A5B500527EC3 /* CategoryCollectionViewCell.swift */; };
@@ -92,6 +93,7 @@
 		E765FD232A8EC55E0033ACE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E77D56C42A78474800770B4B /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		E77D56C82A784AB000770B4B /* OnboardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewCell.swift; sourceTree = "<group>"; };
+		E77D710E2A928AA100ADF786 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E78FF61A2A7ACF2000FB0410 /* LTOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTOViewController.swift; sourceTree = "<group>"; };
 		E79AED8A2A829B5400527EC3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E79AED942A82A5B500527EC3 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				E765FD222A8EC55E0033ACE5 /* Main.storyboard */,
 				E73C98D52A72EF6400426F0F /* Assets.xcassets */,
 				E73C98D72A72EF6400426F0F /* LaunchScreen.storyboard */,
+				E77D710E2A928AA100ADF786 /* GoogleService-Info.plist */,
 				E73C98DA2A72EF6400426F0F /* Info.plist */,
 			);
 			path = ChekPulseTest;
@@ -382,8 +385,10 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = com.uldazimir.luhin;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
+				ORGANIZATIONNAME = "Uladzimir Luhin";
 				TargetAttributes = {
 					E73C98C82A72EF6300426F0F = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -409,6 +414,7 @@
 			mainGroup = E73C98C02A72EF6300426F0F;
 			packageReferences = (
 				E7F2EDF02A8642FE00A04FEB /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				E77D71102A928D0400ADF786 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = E73C98CA2A72EF6300426F0F /* Products */;
 			projectDirPath = "";
@@ -431,6 +437,7 @@
 				E73C98D92A72EF6400426F0F /* LaunchScreen.storyboard in Resources */,
 				E73C98D62A72EF6400426F0F /* Assets.xcassets in Resources */,
 				E749C0742A877893002DE05B /* NewYork.ttf in Resources */,
+				E77D710F2A928AA100ADF786 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,6 +761,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9D563MS63Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChekPulseTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -781,6 +789,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9D563MS63Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChekPulseTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -918,6 +927,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E77D71102A928D0400ADF786 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
 		E7F2EDF02A8642FE00A04FEB /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
