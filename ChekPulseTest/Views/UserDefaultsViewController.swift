@@ -16,6 +16,7 @@ class UserDefaultsViewController: UIViewController {
         let switchState = UserDefaults.standard.switchIsOn
         updateBackgrounBySwitsh(isOn:switchState)
         
+        
         let user = User(firstName: "FiestName", lastName: "LastName")
         let user2 = User(firstName: "Fi2222", lastName: "222222")
     
